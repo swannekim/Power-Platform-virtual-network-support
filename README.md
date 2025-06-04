@@ -37,5 +37,11 @@ Power Platform에서 가상 네트워크 지원 기능은 Dataverse 플러그인
 -----
 한국 중부 리전 및 한국 남부 리전을 지원합니다. 이 경우 가상 네트워크 지원 기능을 사용하려면, 가상네트워크(+ 서브넷 위임 기능을 지정할 서브넷)는 한국 남부 리전 및 한국 중부 리전에 각각 배포돼 있어야 합니다.
 
+| Area      | Power Platform services | Virtual Network support availability|
+|-----------|-------------------------|-------------------------|
+| Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Generally available |
+| Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li><li>[HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)</li></ul> | Generally available |
+| Connectors | <ul><li>[Snowflake](/connectors/snowflakeip/)</li></ul> | Preview |
+
 고려사항
 -----
