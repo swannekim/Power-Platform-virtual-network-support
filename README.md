@@ -49,10 +49,14 @@ Power Platform에서 가상 네트워크 지원 기능은 Dataverse 플러그인
 
 FAQ
 -----
-**가상 네트워크 데이터 게이트웨이(Virtual Network Data Gateway)와 가상 네트워크 지원(Virtual Network support)의 차이점?**
+**가상 네트워크 데이터 게이트웨이(Virtual Network Data Gateway)와 가상 네트워크 지원(Virtual Network support)의 차이점?**  
 가상 네트워크 데이터 게이트웨이는 관리형 데이터 게이트웨이로써, 온프렘 환경에 데이터 게이트웨이를 배포하지 않고도 Azure와 Power Platform에 액세스 할 수 있도록 해줍니다. 예를 들어서 Power BI와 Power Platform 데이터 흐름(dataflow)에서 ETL 작업에 최적화 돼있습니다. 
 가상 네트워크 지원 기능은 Power Platform 환경에서 가상 네트워크 서브넷을 사용하는 것입니다. Power Platform API가 주로 사용하는 기능이며, 한 번에 많은 양의 요청을 처리할 때 사용할 수 있습니다.
 가상 네트워크 지원 기능을 사용할 수 있는 경우는 Power BI와 Power Platform dataflow를 제외한 모든 Power Platform에서 발생하는 아웃바운드 호출 시나리오입니다. Power BI와 Power Platform dataflow는 가상 네트워크 데이터 게이트웨이를 사용합니다.
-
-**가상 네트워크 지원 기능이 failover를 지원하는지?**
+  
+**가상 네트워크 지원 기능이 failover를 지원하는지?**  
 지원합니다. Power Platform에서 선택할 수 있는 Korea 리전과 연동된 리전은 한국 중부(Korea Central) 및 한국 남부(Korea South)이기 때문에 두 개의 리전에 가상 네트워크를 각각 배포하고 서브넷 위임도 각각 설정해야 합니다. 
+
+가상 네트워크에서 발생하는 아웃바운드 트래픽을 모니터링 할 수 있는지?
+가능합니다. Network Security Group 혹은 방화벽을 통해 아웃바운드 트래픽을 확인할 수 있습니다.
+
