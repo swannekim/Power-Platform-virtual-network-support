@@ -2,6 +2,10 @@
 
 이 문서는 다음 [링크](https://learn.microsoft.com/en-us/power-platform/admin/vnet-support-overview)를 참고하였습니다.
 
+목차
+-----
+
+
 개요
 -----
 Power Pltform의 virtual network(가상네트워크) 지원 기능을 통해 트래픽을 퍼블릭망에 노출하지 않고도 가상 네트워크 내부의 리소스와 Power Platform을 통합할 수 있습니다. Virtual Network 지원은 Azure subnet delegation(서브넷 위임)을 사용하여 Power Platform의 아웃바운드 트래픽을 관리합니다. 프라이빗 망을 통하기 때문에 사용자의 리소스가 노출될 우려가 없다는 장점이 있습니다. 가상 네트워크 지원을 활용하면 Power Platform에서 Azure 혹은은 온프레미스에 위치한 리소스를 호출할 수 있습니다. 또한 플러그인 및 커넥터를 사용하여 아웃바운드 호출을 수행할 수 있게 됩니다.
@@ -68,7 +72,7 @@ FAQ
   
 가상 네트워크 지원 구성하기
 -----
-1. 
+[링크](https://github.com/youkhi/Power-Platform-virtual-network-support/blob/main/Hands%20on%20Lab.md)
   
 
 
