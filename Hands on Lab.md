@@ -1,6 +1,6 @@
 
-이 문서는 가상 네트워크 지원 기능을 구현하기 위한 핸즈온랩 문서입니다. Azure RBAC 권한, 구독, Power Platform 권한은 사용자가 이미 가지고 있다고 가정하고 해당 문서를 작성하였습니다. 최대한 직관적인 이해를 위해 가능한 부분은 Azure 포털 상에서 설정하도록 작성하였으며, Azure RABC, prerequisites 등의 내용을 포함한 공식 문서는 [링크](https://learn.microsoft.com/ko-kr/power-platform/admin/vnet-support-setup-configure?tabs=new)를 참고바랍니다.
-
+이 문서는 가상 네트워크 지원 기능을 구현하기 위한 핸즈온랩 문서입니다. Azure RBAC 권한, 구독, Power Platform 권한은 사용자가 이미 가지고 있다고 가정하고 해당 문서를 작성하였습니다. 최대한 직관적인 이해를 위해 가능한 부분은 Azure 포털 상에서 설정하도록 하였으며, 한국 리전에 대해 기능을 설정하는 것으로 가정하였습니다. Azure RABC, prerequisites 등의 내용을 포함한 공식 문서는 [링크](https://learn.microsoft.com/ko-kr/power-platform/admin/vnet-support-setup-configure?tabs=new)를 참고바랍니다.  
+  
 # 목차
   
 - [목차](#목차)
