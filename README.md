@@ -1,10 +1,17 @@
 # Power Platform virtual network support
 
-이 문서는 다음 [링크](https://learn.microsoft.com/en-us/power-platform/admin/vnet-support-overview)를 참고하였습니다.
+이 문서는 마이크로소프트의 공식 문서([링크](https://learn.microsoft.com/en-us/power-platform/admin/vnet-support-overview))를 참고하였습니다.
 
 목차
 -----
-
+  * [개요](#--)
+  * [이점](#--)
+  * [가상네트워크 서브넷 사이즈 고려사항](#-------------------)
+  * [지원 시나리오](#-------)
+  * [지원하는 리전 및 서비스](#-------------)
+  * [고려사항](#----)
+  * [FAQ](#faq)
+  * [가상 네트워크 지원 구성하기](#---------------)
 
 개요
 -----
@@ -72,7 +79,7 @@ FAQ
   
 가상 네트워크 지원 구성하기
 -----
-[링크](https://github.com/youkhi/Power-Platform-virtual-network-support/blob/main/Hands%20on%20Lab.md)를 참고해주세요.
+핸즈온랩은 [링크](https://github.com/youkhi/Power-Platform-virtual-network-support/blob/main/Hands%20on%20Lab.md)에 따로 정리돼있습니다.
   
 
 

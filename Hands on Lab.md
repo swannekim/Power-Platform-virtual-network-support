@@ -67,9 +67,9 @@ Subnet Injection(서브넷 위임) 설정하기
 * resourceGroup : 생성한 리소스그룹명 입력  
 * enterprisePolicyName : enterprise policy명 입력 (예시 : ppvnetsupport)  
 * enterprisePolicyLocation : korea  
-* primaryVnetId : 한국 중부에 생성한 가상 네트워크의 resoruce ID  
+* primaryVnetId : 한국 중부에 생성한 가상 네트워크의 resource ID  
 * primarySubnetName : 서브넷 위임을 설정한 한국 중부 가상 네트워크의 서브넷명  
-* secondaryVnetId : 한국 남부에 생성한 가상 네트워크의 resoruce ID  
+* secondaryVnetId : 한국 남부에 생성한 가상 네트워크의 resource ID  
 * secondarySubnetName : 서브넷 위임을 설정한 한국 남부 가상 네트워크의 서브넷명  
   
 로그인 화면에서 인증 작업까지 마치면 아래와 같은 output을 확인할 수 있습니다.  
@@ -84,7 +84,7 @@ m/enterprisePolicies/ppvnetsupport"
   
 파워플랫폼 환경 생성하기
 -----
-테스트 진행을 위해 파워플랫폼 환경을 생성합니다. [링크](https://admin.powerplatform.microsoft.com/home)로 가서 환경을 생성합니다.  
+테스트 진행을 위해 파워플랫폼 환경을 생성합니다. [Power Platform admin center](https://admin.powerplatform.microsoft.com/home)로 가서 환경을 생성합니다.  
   
 ![PP 환경 생성](screenshots/createppenvironment.png)
 
@@ -96,7 +96,7 @@ m/enterprisePolicies/ppvnetsupport"
   
 ![PP Environment ID 확인](screenshots/ppenvironmentid.png)  
   
-policyArmId는 이전 단계에서 메모장에 따로 기입해 두었던 ResourceId를 입력합니다. 복사해 둔 ResourceId에 엔터값이 포함돼 있을 수 있으니 주의합니다.  
+policyArmId는 이전 단계에서 메모장에 따로 기입해 두었던 ResourceId를 입력합니다. 복사해 둔 ResourceId에 엔터값이 포함돼 있을 수 있으니 주의가 필요합니다.  
 Do you want to poll the linking operation (y/n)에는 'y'를 입력합니다.  
 로그인 화면에서 인증 작업까지 마친 후 output 화면은 아래와 같습니다.  
   
@@ -104,4 +104,6 @@ Do you want to poll the linking operation (y/n)에는 'y'를 입력합니다.
 
 가상 네트워크 지원 기능이 제대로 설정 됐는지 확인하기
 -----
+생성해 놓은 파워플랫폼 환경에서 History를 클릭해 가상 네트워크 지원 기능이 제대로 설정됐는지 확인합니다.  
+  
 ![PP vnet support succeeded](screenshots/ppvnetsupportsucceeded.png)
