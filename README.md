@@ -20,7 +20,7 @@ Power Pltform의 virtual network(가상네트워크) 지원 기능을 통해 트
   
 가상 네트워크 내에서는 Power Platform의 아웃바운드 트래픽에 대해 완전한 제어가 가능합니다. 만약 가상 네트워크와 관련된 Azure Policy가 적용돼 있다면, 해당 트래픽 역시 Azure Policy가 적용됩니다.  
   
-![Power Platform 가상 네트워크 지원 기능을 나타낸 아키텍쳐쳐](screenshots/vnet-support-traffic.png)
+![Power Platform 가상 네트워크 지원 기능을 나타낸 아키텍쳐쳐](screenshots/ppvnetsupportarchitecture.png)
   
 # 가상 네트워크 지원 이점
   
