@@ -78,7 +78,7 @@ Power Platform에서 가상 네트워크 지원 기능은 Dataverse 플러그인
   
 # 가상 네트워크 지원 구성하기
   
-핸즈온랩은 [링크](https://github.com/youkhi/Power-Platform-virtual-network-support/blob/main/Hands%20on%20Lab.md)에 따로 정리돼있습니다.
+핸즈온랩은 [링크](https://github.com/youkhi/Power-Platform-virtual-network-support/blob/main/Configuration%20Hands%20on%20Lab.md)에 따로 정리돼있습니다.
   
 
 
