@@ -1,8 +1,8 @@
 # 목차
   
 - [목차](#목차)
-- [가상 네트워크 지원 개요](#가상-네트워크-지원-개요)
-- [가상 네트워크 지원 이점](#가상-네트워크-지원-이점)
+- [테스트 시나리오](#테스트-시나리오)
+- [리소스 생성 순서](#리소스-생성-순서)
 - [가상네트워크 서브넷 사이즈 고려사항](#가상네트워크-서브넷-사이즈-고려사항)
 - [지원 시나리오](#지원-시나리오)
 - [지원하는 리전 및 서비스](#지원하는-리전-및-서비스)
@@ -10,22 +10,24 @@
 - [FAQ](#faq)
 - [가상 네트워크 지원 구성하기](#가상-네트워크-지원-구성하기)
 
-# 가상 네트워크 지원 개요
+# 테스트 시나리오
   
+이미지 첨부 예정
+
 이 문서는 마이크로소프트의 공식 문서([링크](https://learn.microsoft.com/en-us/power-platform/admin/vnet-support-overview))를 참고하였습니다.
-  
-Power Pltform의 virtual network(가상네트워크) 지원 기능을 통해 트래픽을 퍼블릭망에 노출하지 않고도 가상 네트워크 내부의 리소스와 Power Platform을 통합할 수 있습니다. Virtual Network 지원은 Azure subnet delegation(서브넷 위임)을 사용하여 Power Platform의 아웃바운드 트래픽을 관리하며, 프라이빗 망을 통하기 때문에 사용자의 리소스가 노출될 우려가 없다는 장점이 있습니다. 가상 네트워크 지원을 활용하면 Power Platform에서 Azure 혹은 온프레미스에 위치한 리소스를 호출할 수 있습니다. 또한 플러그인 및 커넥터를 사용하여 아웃바운드 호출을 수행할 수 있게 됩니다.  
-  
-일반적으로 Power Platform은 퍼블릭망을 통해 엔터프라이즈 리소스와 통합해서 사용합니다. 퍼블릭망을 사용하는 경우 사용자의 리소스는 Azure IP 대역대를 방화벽에 추가하거나 혹은 서비스태그 목록을 통해 접근할 수 있어야 합니다. 그러나 Power Platform의 가상 네트워크 지원을 사용하면, 프라이빗망을 통해 엔터프라이즈망에 배포된 리소스와 통합해서 사용할 수 있습니다.  
-  
-가상 네트워크 내에서는 Power Platform의 아웃바운드 트래픽에 대해 완전한 제어가 가능합니다. 만약 가상 네트워크와 관련된 Azure Policy가 적용돼 있다면, 해당 트래픽 역시 Azure Policy가 적용됩니다.  
-  
 ![Power Platform 가상 네트워크 지원 기능을 나타낸 아키텍쳐쳐](screenshots/ppvnetsupportarchitecture.png)
   
-# 가상 네트워크 지원 이점
-  
-- 데이터 보호: 가상네트워크 지원을 사용하면, Power Platform 서비스가 인터넷에 노출되지 않고 사용자의 프라이빗망에 배포된 리소스에 연결할 수 있습니다.
-- 무단 접근 차단: 가상네트워크에 배포된 리소스의 방화벽에 Power Platform의 public IP를 추가하지 않아도 연결할 수 있기 때문에 허가받지 않은 접근에 대한 위험이 없습니다.
+# 리소스 생성 순서
+
+0. 해당 핸즈온랩은 Power Platform virtual network support 기능을 위한 virtual network(리소스 명 : hub-krc-vnet)는 이미 생성되었으며, subnet injection기능까지 구현했다고 가정합니다. 만약 아직 구성하지 않았다면 [링크](https://github.com/youkhi/Power-Platform-virtual-network-support/blob/main/Hands%20on%20Lab.md)를 참조하세요.  
+1. spoke-krc-vnet
+2. SQL Server 리소스 생성
+3. SQL Server 리소스에 public access 막기
+4. SQL Server 리소스에 private endpoint 구성하기
+5. hub-krc-vnet과 spoke-krc-vnet간 vnet peering 구성하기
+6. SQL Server private endpoint의 DNS를 hub-krc-vnet에서 resolution 할 수 있도록 설정하기
+7. Power Automate 구성하기
+8. 테스트
   
 # 가상네트워크 서브넷 사이즈 고려사항
   
