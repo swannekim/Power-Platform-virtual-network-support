@@ -17,7 +17,7 @@
 # 리소스 생성 순서
 
 0. 해당 핸즈온랩은 Power Platform virtual network support 기능을 위한 virtual network(리소스 명 : hub-krc-vnet)는 이미 생성되었으며, subnet injection기능까지 구현했다고 가정합니다. 만약 아직 구성하지 않았다면 [링크](https://github.com/youkhi/Power-Platform-virtual-network-support/blob/main/Configuration%20Hands%20on%20Lab.md)를 참조하세요.  
-1. Spoke 가상 네트워크 생성
+1. Spoke 가상 네트워크 생성  
    리소스 명 : spoke-krc-vnet
    hub-krc-vnet과 IP 대역이 겹치지 않도록 주의합니다.
 2. SQL Server 리소스 생성
