@@ -70,7 +70,7 @@ Install-Module -Name Az -AllowClobber -Force
   
 # Subnet Injection(서브넷 위임) 설정하기
   
-이전에 repository를 clone한 위치(...\enterprisePolicies\SubnetInjection)로 가서 CreateSubnetInjectionEnterprisePolicy.ps1를 실행합니다.  
+이전에 repository를 clone한 위치(...\powershell\enterprisePolicies\SubnetInjection)로 가서 CreateSubnetInjectionEnterprisePolicy.ps1를 실행합니다.  
 팝업 창에서는 'Run once'를 클릭합니다.  
 물어보는 정보는 아래 화면에서 찾을 수 있습니다.  
   
